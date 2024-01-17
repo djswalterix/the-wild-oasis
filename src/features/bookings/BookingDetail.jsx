@@ -4,6 +4,7 @@ import BookingDataBox from "./BookingDataBox";
 import Row from "../../ui/Row";
 import Heading from "../../ui/Heading";
 import Tag from "../../ui/Tag";
+import Empty from "../../ui/Empty";
 import ButtonGroup from "../../ui/ButtonGroup";
 import Button from "../../ui/Button";
 import ButtonText from "../../ui/ButtonText";
@@ -35,6 +36,7 @@ function BookingDetail() {
   const navigate = useNavigate();
   const moveBack = useMoveBack();
   if (isLoading) return <Spinner />;
+  if (!booking) return <Empty resource="Booking" />;
   const { status, id: bookingId } = booking;
 
   const statusToTagName = {
