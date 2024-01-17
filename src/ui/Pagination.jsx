@@ -78,13 +78,13 @@ function Pagination({ count }) {
   }
   return (
     <StyledPagination>
-      <p>
+      <P>
         Showing <span>{(currentPage - 1) * PAGE_SIZE + 1}</span> to{" "}
         <span>
           {currentPage === pageCount ? count : currentPage * PAGE_SIZE}
         </span>{" "}
         <span>of</span> <span>{count}</span> results
-      </p>
+      </P>
       <Buttons>
         <PaginationButton onClick={prevPage} disabled={currentPage === 1}>
           <HiChevronLeft /> <span>Previous</span>

@@ -13,7 +13,7 @@ const FullPage = styled.div`
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
   //log autenticated user
-  const { user, isLoading, isAuthenticated } = useUser();
+  const { isLoading, isAuthenticated } = useUser(); /*user,*/
   //console.log(user, isAuthenticated);
   useEffect(
     function () {

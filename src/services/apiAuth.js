@@ -57,4 +57,6 @@ export async function updateCurrentUser({ password, fullName, avatar }) {
       avatar: `${supabaseUrl}/storage/v1/object/public/avatars/${fileName}`,
     },
   });
+  if (error2) throw new Error(error2.message);
+  return { updatedUser };
 }
