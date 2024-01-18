@@ -45,7 +45,7 @@
 
 ## About The Project
 
-![Screenshot](/public/images/screenshot.png)
+![Screenshot](/public/screenshot.png)
 
 The "Wild Oasis Luxury" is A web application that allow internal users of an Hotel to checkin/checkout and set settings.
 
